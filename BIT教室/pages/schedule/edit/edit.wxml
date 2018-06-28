@@ -1,0 +1,33 @@
+<!--pages/schedule_edit/schedule_edit.wxml-->
+<nav>修改日程</nav>
+<view class='card1'>
+  <view class='title'>日程名称</view>
+  <input class='name' value='{{_title}}' placeholder='We choose to go to the moon' bindinput='input'></input>
+  <view class='image'>选择图像</view>
+  <swiper class='pic' indicator-dots="true" bindchange='switch' current='{{swiper}}'>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class='cut'/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='card2'>
+  <view class='time'>
+    <image class='png' src='/image/time-2.png'></image>
+    <view class='date'>提醒日期</view>
+  </view>
+  <picker-view class='select' indicator-style="height: 50px;"  value="{{picker_Index}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{days}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{hours}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{minutes}}" style="line-height: 50px">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>
+<view bindtap='done' class='done'>修改</view>
+<view class='block'></view>

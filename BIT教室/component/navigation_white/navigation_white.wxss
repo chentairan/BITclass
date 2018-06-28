@@ -1,0 +1,22 @@
+/* component/navigation_in/navigation_in.wxss */
+.title
+{
+  height: 40rpx;
+}
+.nav
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 110rpx;
+  width: 750rpx;
+}
+.back
+{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 16rpx;
+  top: 70rpx;
+}

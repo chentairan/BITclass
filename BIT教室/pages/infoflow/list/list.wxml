@@ -1,0 +1,32 @@
+<!--pages/infoflow/list/list.wxml-->
+<view class='fixed'>
+  <image src='/image/setting.png' class='setting' bindtap='hide'></image>
+  <view class='title'>教务通知</view>
+</view>
+<view class='contain'>
+  <view class='assi'>
+    <view class='type'>{{type?'摘要':'列表'}}</view>
+    <view class='submit' bindtap='register'>
+      <image class='submit_image' src='{{submit}}'></image>
+      <view class='{{submit=="/image/info_add.png"?"submit_text":"submit_text2"}}'>{{text}}</view>
+    </view>
+  </view>
+
+  <view wx:if='{{type}}' class='list'>
+    <block wx:for='{{content}}'wx:for-item="note" wx:if="{{note.title!=0&&note.title!=null}}">
+      <view class='cell' bindtap='tap' data-id="{{note}}">
+        <view class='info_title'>{{note.title}}</view>
+        <view class='detl'>{{note.article}}</view>
+        <view class='source'>{{note.source}}</view>
+      </view>
+    </block>
+  </view>
+
+  <view wx:if='{{!type}}' class='list'>
+     <block wx:for='{{content}}'wx:for-item="note" wx:if="{{note.title!=0&&note.title!=null}}">
+      <view class='block' bindtap='tap' data-id="{{note}}">
+        <view class='list_title'>{{note.title}}</view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,140 @@
+/* pages/infoflow/list/list.wxss */
+page 
+{
+  background-color: #F5F5F5;
+}
+.fixed
+{
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+  height: 150rpx;
+  background-color: #F5F5F5;
+  position: fixed;
+  z-index: 1;
+}
+.setting
+{
+  position: fixed;
+  top: 80rpx;
+  left: 60rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.title
+{
+  position: fixed;
+  top: 70rpx;
+  left: 291rpx;
+  font-size: 42rpx;
+}
+.contain
+{
+  position: absolute;
+  top: 150rpx;
+}
+.assi
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 140rpx;
+  width: 750rpx;
+}
+.type
+{
+  margin-left: 52rpx;
+  font-size: 74rpx;
+  
+  color: #626262;
+}
+.submit
+{
+  margin-right: 60rpx;
+  display: flex;
+  align-items: center;
+}
+.submit_image
+{
+  width: 40rpx;
+  height: 40rpx;
+}
+.submit_text
+{
+  margin-left: 14rpx;
+  font-size: 38rpx;
+  color: #232323;
+}
+.submit_text2
+{
+  margin-left: 14rpx;
+  font-size: 38rpx;
+  color: #A7A7A7;
+}
+.list
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cell
+{
+  width: 610rpx;
+  height: 780rpx;
+  border-radius: 12rpx;
+  background-color: white;
+  box-shadow: 0 6rpx 12rpx rgba(0, 0, 0, 0.04);
+  margin-bottom: 24rpx;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+.info_title
+{
+  font-size: 44rpx;
+  font-weight: bold;
+  color: black;
+  margin-top: 60rpx;
+  width: 610rpx;
+  height: 122rpx;
+  overflow: hidden;
+}
+.detl
+{
+  margin-top: 52rpx;
+  width: 606rpx;
+  height: 420rpx;
+  line-height: 60rpx;
+  overflow: hidden;
+  padding-left: 2rpx;
+  padding-right: 2rpx;
+  color: #707070;
+  font-size: 38rpx;
+}
+.source
+{
+  margin-top: 8rpx;
+  font-size: 36rpx;
+  color: #878787;
+}
+.block
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 570rpx;
+  height: 200rpx;
+  background-color: white;
+  border-radius: 12rpx;
+  box-shadow: 0 6rpx 12rpx rgba(0, 0, 0, 0.04);
+  margin-bottom: 24rpx;
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+}
+.list_title
+{
+  font-size: 38rpx;
+  color: #333333;
+  height: 104rpx;
+  overflow: hidden;
+}

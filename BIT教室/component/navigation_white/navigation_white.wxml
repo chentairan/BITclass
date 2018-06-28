@@ -1,0 +1,6 @@
+<!--component/navigation_in/navigation_in.wxml-->
+<view class='title' style='background-color: {{color}}'></view>
+<view class='nav' style='background-color: {{color}}'>
+  <image src='/image/back_white.png' class='back' bindtap='back'></image>
+  <slot></slot>
+</view>

@@ -1,0 +1,5 @@
+<!--component/navigation/navigation.wxml-->
+<view class='title' style='background-color: {{color}}'></view>
+<view class='nav' style='background-color: {{color}}'>
+  <slot></slot>
+</view>

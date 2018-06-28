@@ -1,0 +1,147 @@
+/* pages/time/time.wxss */
+.contain
+{
+  display: flex;
+  flex-direction: column;
+}
+.line
+{
+  width: 80rpx;
+  height: 6rpx;
+  margin-left: 334rpx;
+  margin-top: 10rpx;
+  margin-bottom: 36rpx;
+  border-radius: 6rpx;
+}
+.line.l1
+{
+  background-color: #2196F3;
+}
+.line.l2
+{
+  background-color: #E91E63;
+}
+.title
+{
+  color: black;
+  font-size: 48rpx;
+  margin-left: 328rpx;
+}
+.dt
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.time
+{
+  font-size: 38rpx;
+  margin-left: 60rpx;
+  letter-spacing: 2rpx;
+}
+.time.t1
+{
+  color: #2196F3;
+}
+.time.t2
+{
+  color: #E91E63;
+}
+.dot
+{
+  width: 20rpx;
+  height: 20rpx;
+  background-color:#2196F3;
+  margin-left: 60rpx;
+  border-radius: 100%;
+}
+.dot.d1
+{
+  background-color:#2196F3;
+}
+.dot.d2
+{
+  background-color: #E91E63;
+}
+.content
+{
+  margin-top: 36rpx;
+  margin-left: 140rpx;
+  margin-bottom: 80rpx;
+  width: 530rpx;
+  height: 140rpx;
+  border-radius: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 40rpx;
+  padding-right: 20rpx;
+}
+.bg
+{
+  width: 590rpx;
+  height: 140rpx;
+  border-radius: 32rpx;
+  position: absolute;
+  left: 140rpx;
+}
+.mask
+{
+  width: 590rpx;
+  height: 140rpx;
+  border-radius: 32rpx;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 2;
+  position: absolute;
+  left: 140rpx;
+}
+.text
+{
+  font-size: 36rpx;
+  color: white;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+.arrow
+{
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  z-index: 4;
+}
+.none
+{
+  margin-top: 40rpx;
+  margin-bottom: 66rpx;
+  color: #95989A;
+  font-size: 40rpx;
+  display: flex;
+  justify-content: center;
+}
+.add
+{
+  width: 120rpx;
+  height: 120rpx;
+  background-color: #EF4A3E;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  bottom: 60rpx;
+  right: 60rpx;
+  box-shadow: 
+    0 1.8rpx 3rpx -1.2rpx rgba(239,74,62,1),
+    0 6rpx 12rpx -4.5rpx rgba(239,74,62,0.75),
+    0 6rpx 18rpx -1.5rpx rgba(239,74,62,0.5),
+    0 18rpx 18rpx -0.75rpx rgba(239,74,62,0.2);
+  z-index: 4;
+}
+.pic
+{
+  width: 30rpx;
+  height: 30rpx;
+  z-index: 4;
+}

@@ -1,0 +1,11 @@
+<!--pages/love_hide/love_hide.wxml-->
+<view class="train">
+  <view class="windows"></view>
+  <view class="lights"></view>
+</view>
+<view class="rails">
+  <view class="ties"></view>
+  <view class="ties"></view>
+  <view class="ties"></view>
+</view>
+<view class='text' bindtap='Toabout'>敬请期待</view>

@@ -1,0 +1,7 @@
+<!--pages/user/login/login.wxml-->
+<nav color='#F5F5F5'>注册/登录</nav>
+<view class='contain'>
+  <input class='username' placeholder='请输入账号' placeholder-class='p' bindblur='username'></input>
+  <input class='password' placeholder='请输入密码' placeholder-class='p' bindinput='password'></input>
+  <view class='submit' bindtap='submit'>{{text}}</view>
+</view>

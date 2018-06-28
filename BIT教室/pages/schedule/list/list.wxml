@@ -1,0 +1,42 @@
+<!--pages/time/time.wxml-->
+<nav></nav>
+<view class='contain'>
+  <view class='title'>今日</view>
+  <view class='line l1'></view>
+  <block wx:if="{{now!=0}}">
+    <view wx:for="{{now}}">
+      <view class='dt'>
+        <view class='dot d1'></view>
+        <view class='time t1'>{{now[index][5]}}:{{now[index][6]}}</view>
+      </view>
+      <view class='content' bindtap='content_now' bindlongpress='del_now' data-id="{{index}}">
+        <image mode="" src='{{bg_path[now[index][7]]}}' class='bg'></image>
+        <view class='mask' ></view>
+        <view class='text'>{{now[index][0]}}</view>
+        <image src='/image/arrow.png' class='arrow'></image>
+      </view>
+    </view>
+  </block>
+  <view wx:else class='none'>暂无日程</view> 
+
+  <view class='title'>他日</view>
+  <view class='line l2'></view>
+  <block wx:if="{{after!=0}}">
+  <view wx:for="{{after}}">
+    <view class='dt'>
+      <view class='dot d2'></view>
+      <view class='time t2'>{{after[index][1]}}年{{after[index][2]}}月{{after[index][3]}}日{{after[index][5]}}:{{after[index][6]}}</view>
+    </view>
+    <view class='content' bindtap='content_after' bindlongpress='del_after' data-id="{{index}}">
+      <image mode="" src='{{bg_path[after[index][7]]}}' class='bg'></image>
+      <view class='mask'></view>
+      <view class='text'>{{after[index][0]}}</view>
+      <image src='/image/arrow.png' class='arrow'></image>
+    </view>
+  </view>
+  </block>
+  <view wx:else class='none'>暂无日程</view> 
+</view>
+<view bindtap='add' class='add'>
+  <image class='pic' src='/image/add.png'></image>
+</view>

@@ -1,0 +1,37 @@
+<!--pages/infoc/infoc.wxml-->
+<nav color='#F5F5F5'>详情</nav>
+<view class='contain' hidden="{{!spilt}}">
+  <view style='padding:0 30rpx 0 30rpx'>
+    <view class='title'>{{content.title}}</view>
+    <view>
+      <view class='label'>{{content.source}}</view>
+      <view class='day'>{{content.day}}</view>
+      <view bindtap='bigbang' class='bigbang'>分词</view>
+    </view>
+  </view>
+  <view class='complete'>
+    <block  wx:for='{{content.article}}'wx:for-item="note" wx:if="{{note!=0&&note!=null}}">
+      <view style='text-indent:1em'>
+        <text selectable='true' space='true' class='article'>{{note}}</text>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view hidden='{{spilt}}' class='bg'></view>
+<view hidden="{{spilt}}">
+  <view class='copy_contain'>
+    <view class='circle' bindtap='copy'>
+      <image src='/image/copy.png' class='copy'></image>
+    </view>
+  </view>
+  <view class='mask'>
+    <block  wx:for='{{bang}}'wx:for-item="text">
+      <view class='{{State[index]?"btn":"btn_h"}}' bindtap='chosen' data-id="{{index}}">
+      <view style='position:relative;top:10rpx;font-size:38rpx;'>
+          {{text}}
+      </view>
+      </view>
+    </block>
+  </view>
+</view>

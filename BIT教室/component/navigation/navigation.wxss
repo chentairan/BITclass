@@ -1,0 +1,14 @@
+/* component/navigation/navigation.wxss */
+.title
+{
+  height: 40rpx;
+}
+.nav
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  height: 110rpx;
+  width: 750rpx;
+}

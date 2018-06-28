@@ -1,0 +1,87 @@
+<!--pages/home/home.wxml-->
+<view class='contain'>
+  <view class='bg_top'>
+    <view class='title'>BIT教室</view>
+    <view class='author'>不要因为走得太远，就忘了当初为什么出发！</view>
+  </view>
+  
+  <view class='user'>
+    <view class='user_up' bindtap='dtl'>
+      <view class='fix'>
+        <image src='{{head}}' class='head'></image>
+        <view class='name'>{{name}}</view>
+      </view>
+      <view class='login' catchtap='login'>{{login}}</view>
+    </view>
+    <view class='line'></view>
+    <view class='user_down'>
+      <view>{{dist}}</view>
+      <view class='fix' bindtap='dist'>
+        <view>选择校区</view>
+        <view class='zone'></view>
+      </view>
+    </view>
+  </view>
+
+  <view class='function'>
+  <!--空闲教室-->
+    <view class='temp'>
+      <view class='circle' bindtap='frec'>
+        <image src='/image/freeclass.png' class='png'></image>
+      </view>
+      <view class='text'>空闲教室</view>
+    </view>
+  <!--课程查询-->
+    <view class='temp'>
+      <view class='circle' bindtap='proj'>
+        <image src='/image/project.png' class='png'></image>
+      </view>
+      <view class='text'>课程查询</view>
+    </view>
+  <!--协作-->
+    <view class='temp'>
+      <view class='circle' bindtap='coop'>
+        <image src='/image/coop.png' class='png'></image>
+      </view>
+      <view class='text'>协作</view>
+    </view>
+  <!--同步音乐-->
+    <view class='temp'>
+      <view class='circle' bindtap='musi'>
+        <image src='/image/music.png' class='png'></image>
+      </view>
+      <view class='text'>同步音乐</view>
+    </view>
+  </view>
+
+  <view class='colu' bindtap='jwc'>
+    <view class='colu_text'>教务通知</view>
+    <view class='colu_more' catchtap='subs'>
+      <view class='more'></view>
+      <view class='more'></view>
+      <view class='more'></view>
+    </view>
+  </view>
+
+  <swiper class='jwc' indicator-dots='true'>
+    <block wx:for="{{content}}">
+      <swiper-item class='content' data-id="{{item}}" bindtap='skip' >
+        <view class='jwc_day'>{{item.day}}</view>
+        <view class='jwc_title'>{{item.title}}</view>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='colu' bindtap='tim'>
+    <view class='colu_text'>日程</view>
+    <view class='colu_more' catchtap='add'>
+      <view class='more'></view>
+      <view class='more'></view>
+      <view class='more'></view>
+    </view>
+  </view>
+
+  <view class='gtd'>
+    <view class='empt'>{{last}}</view>
+  </view>
+</view>

@@ -1,0 +1,161 @@
+/* pages/infoc/infoc.wxss */
+.contain
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.title
+{
+  display: flex;
+  float: left;
+  font-size: 48rpx;
+  font-weight: bold;
+  margin:60rpx 0 10rpx 0;
+  flex-direction: row;
+}
+.label
+{
+  display: flex;
+  float: left;
+  font-size: 32rpx;
+  flex-direction: row;
+  margin:10rpx 500rpx 10rpx 0;
+}
+.day
+{
+  display: flex;
+  float: left;  
+  font-size: 24rpx;
+  color: #BCBCBC;
+  margin: 5rpx 0 20rpx 0;
+  flex-direction: row;
+}
+.kind
+{
+  position: relative;
+  left: 30rpx;
+}
+.sub
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140rpx;
+  height: 60rpx;
+  border-radius: 60rpx;
+  position: absolute;
+  left: 574rpx;
+  top: 410rpx;
+  font-size: 24rpx;
+  background-color: #F7F5F2;
+  color: #917F62;
+}
+.complete
+{
+  top: 530rpx;
+  padding: 30rpx;
+  font-size: 38rpx;
+  width: 690rpx;
+}
+.bigbang
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120rpx;
+  height: 50rpx;
+  background-color: red;
+  color: white;
+  font-size: 24rpx;
+  border-radius: 10rpx;
+  position: relative;
+  left: 420rpx;
+  top: -50rpx;
+}
+.mask
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 100rpx 30rpx 100rpx 30rpx;
+  
+}
+.btn
+{
+  display: inline-block;
+  margin-left: 6rpx;
+  margin-right: 6rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  flex-wrap: wrap;
+  height: 72rpx;
+  padding: 0 20rpx 0 20rpx;
+  background-color: #F4F7F6;
+  color: #929FB1;
+  border-radius: 10rpx;
+}
+.btn_h
+{
+  display: inline-block;
+  margin-left: 6rpx;
+  margin-right: 6rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  flex-wrap: wrap;
+  height: 72rpx;
+  padding: 0 20rpx 0 20rpx;
+  background-color: #7A839A;
+  color: #929FB1;
+  border-radius: 10rpx;
+}
+.copy_contain
+{
+  position: fixed;
+  display: flex;
+  top: 150rpx;
+  left: 0;
+  height: 100rpx;
+  width: 100%;
+  z-index: 4;
+  color: white;
+}
+.copy
+{
+  width: 30rpx;
+  height: 30rpx;
+}
+.circle
+{
+  width: 60rpx;
+  height: 60rpx;
+  box-shadow: inset 0 21rpx 30rpx -15rpx rgba(255,255,255,0.6),
+    0 0.9rpx 1.5rpx -0.6rpx rgba(100,100,100,1),
+    0 3rpx 6rpx -2.25rpx rgba(100,100,100,0.75),
+    0 3rpx 9rpx -1.5rpx rgba(100,100,100,0.5),
+    0 9rpx 9rpx -0.75rpx rgba(100,100,100,0.2);
+  display: flex;
+  position: absolute;
+  top: -90rpx;
+  left: 30rpx;
+  border-radius: 100%;
+  background-color: #D81E06;
+  align-items: center;
+  justify-content: center;
+}
+.bg
+{
+  background: -webkit-linear-gradient(top,#B8C2CE,#929FB1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.article
+{
+  color: #191919;
+}

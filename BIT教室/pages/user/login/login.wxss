@@ -1,0 +1,43 @@
+/* pages/user/login/login.wxss */
+.contain
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 750rpx;
+  height: 1184rpx;
+}
+.username
+{
+  width: 660rpx;
+  height: 64rpx;
+  border-bottom: 1rpx solid #707070;
+  
+  margin-top: 106rpx;
+}
+.password
+{
+  margin-top: 40px;
+  width: 660rpx;
+  height: 64rpx;
+  border-bottom: 1rpx solid #707070;
+}
+.submit
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600rpx;
+  height: 90rpx;
+  margin-top: 160rpx;
+  background-color: white;
+  border: 1rpx solid #D43E35;
+  border-radius: 90rpx;
+  font-size: 36rpx;
+  color: #D43E35;
+}
+.p
+{
+  color: #808080;
+  font-size: 38rpx;
+}

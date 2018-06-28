@@ -1,0 +1,277 @@
+/* pages/userinfo/userinfo.wxss */
+page 
+{
+  display: block;
+  background-color: #f8f8f8;
+}
+.panel
+{
+  background: #fff;
+  border-top: 1rpx solid #f8f8f8;
+  border-bottom: 1rpx solid #f8f8f8;
+  overflow: hidden;
+  border-radius: 10rpx;
+  margin: 20rpx 0rpx 0 0rpx;
+}
+.cell
+{
+  position: relative;
+  padding: 50rpx 50rpx;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+  font-size: 30rpx;
+}
+
+.cell__bd
+{
+  flex: 1;
+}
+.font1
+{
+  margin:  0 30rpx 0 0;
+  position: relative;
+  font-size: 30rpx;
+  text-align: right;
+  color:  darkgray;
+}
+
+.cell__ft
+{
+  position: relative;
+  text-align: right;
+  color: #000;
+}
+
+.cell--access .cell__ft::after
+{
+  position: absolute;
+  top: 50%;
+  right: 4rpx;
+  content: " ";
+  display: inline-block;
+  height: 12rpx;
+  width: 12rpx;
+  border-width: 4rpx 4rpx 0 0;
+  border-color: #c8c8c8;
+  border-style: solid;
+  transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+
+.block1
+{
+  position: relative;
+  height: 200rpx;
+  width: 750rpx;
+  display: flex;
+  background-color: #ffffff;
+  margin: 0 0 10rpx 0;
+}
+
+.icon
+{
+  width:140rpx;
+  height:140rpx;
+  background-color:white;
+  position:absolute;
+  left:558rpx;
+  top:30rpx;
+  border-radius:140rpx;
+}
+
+.username
+{
+  font-size: 50rpx;
+  position:absolute;
+  left:50rpx;
+  top:75rpx;
+}
+
+.mask
+{
+  background-color: rgba(0,0,0,0.284);
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.block2
+{
+  padding: 0,0,30rpx,0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left:50rpx;
+  top:350rpx;
+  z-index: 5;
+  width: 650rpx;
+  height: 440rpx;
+  background-color: #fff;
+  border-radius:6rpx;
+  border:2rpx solid #F0F0F0;
+  box-shadow: 0 6rpx 12rpx rgba(0,0,0,0.2);
+}
+
+.block2_1
+{
+  padding: 0,0,30rpx,0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left:50rpx;
+  top:350rpx;
+  z-index: 5;
+  width: 650rpx;
+  height: 500rpx;
+  background-color: #fff;
+  border-radius:6rpx;
+  border:2rpx solid #F0F0F0;
+  box-shadow: 0 6rpx 12rpx rgba(0,0,0,0.2);
+}
+
+.title
+{
+  position: relative;
+  top: 50rpx;
+  height: 36rpx;
+  left:50rpx;
+  color: #000; 
+  font-size: 36rpx;
+  font-weight: 800;
+}
+
+.input_name
+{
+  position: relative;
+  top: 110rpx;
+  height: 30rpx;
+  left:50rpx;
+}
+
+.input_name1
+{
+  position: relative;
+  top: 160rpx;
+  height: 30rpx;
+  left:50rpx;
+}
+.holder
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items:Center;
+  color:  #88878C;
+  font-size: 30rpx;
+}
+.line
+{
+  position: relative;
+  top: 120rpx;
+  height: 2rpx;
+  width: 500rpx;
+  left:50rpx;
+  background-color: #c8c8c8;
+}
+.line1
+{
+  position: relative;
+  top: 170rpx;
+  height: 2rpx;
+  width: 500rpx;
+  left:50rpx;
+  background-color: #c8c8c8;
+}
+.note
+{
+  position: relative;
+  top: 150rpx;
+  left:50rpx;
+  height: 24rpx;
+  display: flex;
+  width: 500rpx;
+  justify-content: flex-start;
+  align-items:Center;
+  color:  #88878C;
+  font-size: 24rpx;
+}
+.block3
+{
+  display: flex;
+  flex-direction: row;
+  position:absolute;
+  left:50rpx;
+  top:365rpx;
+  font-size: 24rpx;
+  height: 24rpx; 
+}
+
+.block3_1
+{
+  display: flex;
+  flex-direction: row;
+  position:absolute;
+  left:50rpx;
+  top:425rpx;
+  font-size: 24rpx;
+  height: 24rpx; 
+}
+
+.cancel
+{
+  position: relative;
+  left:300rpx;
+  width: 60rpx;
+  color: black;
+}
+.ensure
+{
+  position: relative;
+  left:400rpx;
+  width: 60rpx;
+  color: gold;
+}
+.institute
+{
+  position: relative;
+  top:80rpx;
+  left:50rpx;
+  width: 550rpx;
+  overflow: hidden;
+  height: 200rpx;
+  font-size: 32rpx;
+}
+
+.institute1
+{
+  display: flex;
+  align-items:Center;
+  justify-content: center;
+  height: 100rpx;
+  font-size: 32rpx;
+}
+
+.block4
+{
+  height: 210rpx;
+  background-color: #f8f8f8;
+}
+
+.finish
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 586rpx;
+  height: 90rpx;
+  border-radius: 90rpx;
+  background-color: white;
+  border: 1rpx solid #D43E35;
+  font-size: 36rpx;
+  color: #D43E35;
+  position: relative;
+  top: 60rpx;
+  left: 90rpx;
+}

@@ -1,0 +1,103 @@
+<!--pages/userinfo/userinfo.wxml-->
+<!--主体-->
+<nav color='#F5F5F5'>用户信息</nav>
+  <view class='block1'>
+    <view class='username'>{{username}}</view>
+    <image src='{{icon}}' class='icon' bindtap='icon'></image>
+  </view>
+  <view class='panel'>
+    <view bindtap='nickname1' class="cell cell--access">
+      <view class='cell__bd'>昵称</view>
+      <view class='font1'>{{nickname_dis==''?'无':nickname_dis}}</view>
+      <view class="cell__ft"></view>
+    </view>
+    <view bindtap='code1' class="cell cell--access">
+      <view class='cell__bd'>修改密码</view>
+      <view class="cell__ft"></view>
+    </view>
+  </view>
+  <view class='panel'>
+    <view bindtap='stu_num1' class="cell cell--access">
+      <view class='cell__bd'>学号</view>
+      <view class='font1'>{{stu_num_dis==''?'无':stu_num_dis}}</view>
+      <view class="cell__ft"></view>
+    </view>
+    <view bindtap='class_num1' class="cell cell--access">
+      <view class='cell__bd'>班号</view>
+      <view class='font1'>{{class_num_dis==''?'无':class_num_dis}}</view>
+      <view class="cell__ft"></view>
+    </view>
+    <view bindtap='ins1' class="cell cell--access">
+      <view class='cell__bd'>学院</view>
+      <view class='font1'>{{ins_dis==''?'无':ins_dis}}</view>
+      <view class="cell__ft"></view>
+    </view>
+  </view>
+  <view class='block4'>
+   <view class="finish" bindtap="finish">保存修改</view>
+  </view>
+<!--隐藏框-->
+<view class='mask' bindtap='nickname1' hidden="{{nickname}}"></view>
+<view class='block2' hidden="{{nickname}}">
+  <test class='title'>修改昵称</test>
+  <input placeholder="请输入您的昵称" placeholder-class="holder" class='input_name' bindinput='nickname_input'></input>
+  <view class='line'></view>
+  <view class='note'>4-16个字符，仅支持中文、英文大小写、数字、常用符号及其组合</view>
+  <view class='block3'>
+    <view class='cancel' bindtap='nickname1' >取消</view>
+    <view class='ensure' bindtap='nickname' >确定</view>
+  </view>
+</view>
+
+<view class='mask' bindtap='code1' hidden="{{code}}"></view>
+<view class='block2' hidden="{{code}}">
+  <test class='title'>修改密码</test>
+  <input placeholder="请输入您的原密码" placeholder-class="holder" class='input_name' password='true' bindinput='code_input1'></input>
+  <view class='line'></view>
+  <input placeholder="请确定您的新密码" placeholder-class="holder" class='input_name1' bindinput='code_input'></input>
+  <view class='line1'></view>
+  <view class='block3'>
+    <view class='cancel' bindtap='code1' >取消</view>
+    <view class='ensure' bindtap='code' >确定</view>
+  </view>
+</view>
+
+<view class='mask' bindtap='stu_num1' hidden="{{stu_num}}"></view>
+<view class='block2' hidden="{{stu_num}}">
+<test class='title'>学号</test>
+  <input placeholder="请输入您的学号" type='number' placeholder-class="holder" class='input_name' bindinput='stu_num_input'></input>
+  <view class='line'></view>
+  <view class='note'>我们将利用您提供的学号，更好的服务您的校园生活</view>
+  <view class='block3'>
+    <view class='cancel' bindtap='stu_num1' >取消</view>
+    <view class='ensure' bindtap='stu_num' >确定</view>
+  </view>
+</view>
+
+<view class='mask' bindtap='class_num1' hidden="{{class_num}}"></view>
+<view class='block2' hidden="{{class_num}}">
+  <test class='title'>班号</test>
+  <input placeholder="请输入您的班号" type='number' placeholder-class="holder" class='input_name' bindinput='class_num_input'></input>
+  <view class='line'></view>
+  <view class='note'>我们将利用您提供的班号，向你提供班级便签的相关服务</view>
+  <view class='block3'>
+    <view class='cancel' bindtap='class_num1' >取消</view>
+    <view class='ensure' bindtap='class_num' >确定</view>
+  </view>
+</view>
+
+<view class='mask' bindtap='ins1' hidden="{{ins}}"></view>
+<view class='block2_1' hidden="{{ins}}">
+  <test class='title'>学院设置</test>
+  <picker-view class='institute' indicator-class="institute1" style='width: 550rpx; height: 300rpx;' value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{institute}}" style="line-height: 100rpx">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+  <view class='block3_1'>
+    <view class='cancel' bindtap='ins1' >取消</view>
+    <view class='ensure' bindtap='ins' >确定</view>
+  </view>
+</view>
+
+
