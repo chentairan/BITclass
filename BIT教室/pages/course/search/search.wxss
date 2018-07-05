@@ -1,1 +1,95 @@
 /* pages/course/search/search.wxss */
+page 
+{
+  background-color: #F5F5F5;
+}
+.contain
+{
+  display: flex;
+  flex-direction: column;
+  width: 750rpx;
+  height: 1334rpx;
+  align-items: center;
+  background-color: #F5F5F5;
+  position: fixed;
+  z-index: 1;
+}
+.title
+{
+  margin-top: 160rpx;
+  color: #626262;
+  font-size: 74rpx;
+}
+.small
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 136rpx;
+  width: 672rpx;
+  height: 100rpx;
+}
+.tab
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 300rpx;
+  height: 100rpx;
+  background-color: white;
+  border: 2rpx solid #F0F0F0;
+}
+.img
+{
+  margin-left: 14rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.xueyuan
+{
+  display: flex;
+  align-items: center;
+  width: 232rpx;
+  height: 100rpx;
+  font-size: 30rpx;
+  padding-left: 10rpx;
+  color: #808080;
+}
+.input1
+{
+  margin-left: 8rpx;
+  width: 232rpx;
+  height: 100rpx;
+  font-size: 30rpx;
+}
+.kecheng
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40rpx;
+  width: 670rpx;
+  height: 100rpx;
+  background-color: white;
+  border: 2rpx solid #F0F0F0;
+}
+.input2
+{
+  margin-left: 8rpx;
+  width: 602rpx;
+  height: 100rpx;
+  font-size: 30rpx;
+}
+.search
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160rpx;
+  width: 600rpx;
+  height: 100rpx;
+  border: 2rpx solid #D43E35;
+  font-size: 36rpx;
+  color: #D43E35;
+  border-radius: 100rpx;
+}

@@ -1,6 +1,8 @@
 <!--pages/infoflow/list/list.wxml-->
 <view class='fixed'>
-  <image src='/image/setting.png' class='setting' bindtap='hide'></image>
+  <view class='fix' bindtap='hide'>
+    <image src='/image/setting.png' class='setting'></image>
+  </view>
   <view class='title'>教务通知</view>
 </view>
 <view class='contain'>

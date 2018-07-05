@@ -1,0 +1,138 @@
+/* pages/class_setting.wxss */
+page 
+{
+  background-color: #FDFDFD;
+}
+.index
+{
+  margin-left: 40rpx;
+  margin-top: 50rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.tag
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 40rpx;
+  margin-top: 44rpx;
+}
+.name
+{
+  font-size: 40rpx
+}
+.input
+{
+  background-color: white;
+  border:2rpx solid #F0F0F0;
+  width: 560rpx;
+  height: 80rpx;
+  padding-left: 20rpx;
+}
+.locate
+{
+  margin-top: 24rpx;
+  margin-left: 40rpx;
+  font-size: 28rpx;
+}
+.picker
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.build
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  width: 300rpx;
+  height: 100rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+  border:2rpx solid #F0F0F0;
+}
+.pic
+{
+  margin-left: 16rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.text
+{
+  margin-left: 16rpx;
+  color: #CCCCCC;
+  font-size: 28rpx;
+}
+.line
+{
+  height: 2rpx;
+  width: 40rpx;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  background-color: black;
+}
+.classroom
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 300rpx;
+  height: 100rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+  border:2rpx solid #F0F0F0;
+}
+.switch
+{
+  margin-top: -14rpx;
+  display: flex;
+  flex-direction: row;
+  margin-left: 480rpx;
+}
+.state
+{
+  font-size: 40rpx;
+}
+.up
+{
+  margin-left: 40rpx;
+}
+.date
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10rpx;
+  margin-left: 40rpx;
+  width: 670rpx;
+  height: 100rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+  border:2rpx solid #F0F0F0;
+}
+.done
+{
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 36rpx;
+  border-radius: 32rpx;
+  position: fixed;
+  left: 75rpx;
+  bottom: 40rpx;
+  width: 600rpx;
+  height: 100rpx;
+  background-color: rgba(50, 91, 246, 0.95);
+  box-shadow: 0 6rpx 12rpx rgba(50, 91, 246, 0.5)
+}
+.block
+{
+  width: 750rpx;
+  height: 180rpx;
+}

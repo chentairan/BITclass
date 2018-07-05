@@ -1,4 +1,4 @@
-// pages/freeclass/search/search.js
+// pages/freeclass/search/.js
 Page({
 
   /**

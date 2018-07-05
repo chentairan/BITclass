@@ -1,0 +1,16 @@
+<!--pages/course/results/results.wxml-->
+<nav color='#F5F5F5'>课程查询</nav>
+<view class='contain'>
+  <view class='type'>{{condition}}</view>
+  <view class='list'>
+    <block wx:for='{{content}}'>
+      <view class='cell'>
+        <view class='kcmc'>{{item.kcmc}}</view>
+        <view class='stan'>{{item.jsxm}}</view>
+        <view class='stan'>{{item.jsmc}}</view>
+        <view class='stan'>{{item.sksj}}</view>
+        <view class='stan'>{{item.kkyxmc}}</view>
+      </view>
+    </block>
+   </view>
+</view>

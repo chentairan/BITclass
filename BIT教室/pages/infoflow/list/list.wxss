@@ -13,11 +13,19 @@ page
   position: fixed;
   z-index: 1;
 }
-.setting
+.fix
 {
   position: fixed;
-  top: 80rpx;
-  left: 60rpx;
+  top: 60rpx;
+  left: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80rpx;
+  height: 80rpx;
+}
+.setting
+{
   width: 40rpx;
   height: 40rpx;
 }

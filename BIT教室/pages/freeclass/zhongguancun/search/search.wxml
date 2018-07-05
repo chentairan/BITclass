@@ -1,0 +1,57 @@
+<!--pages/class/class.wxml-->
+<nav color='#FDFDFD'></nav>
+<view class='contain'>
+  <view class='title'>空教室查询</view>
+
+<!--教学楼Picker-->
+<picker bindchange="bindPickerbuild" value="{{Index_build}}" range="{{build_array}}">
+  <view class='build'>
+    <image src='/image/locate.png' class='pic'></image>
+    <view>
+      <view class='text'>
+        {{build_array[Index_build]}}
+      </view>
+    </view>
+  </view>
+ </picker>
+
+  <view class='line'></view>
+
+<!--教室Picker-->
+  <picker mode="multiSelector" bindchange="bindMultiPickerClass" bindcolumnchange="bindMultiPickerColumnClass" value="{{multiIndex_classroom}}" range="{{multiArray_classroom}}">
+    <view class='classroom'>
+      <image src='/image/locate.png' class='pic'></image>
+      <view>
+        <view class="text">
+          {{multiArray_classroom[1][multiIndex_classroom[1]]}}
+        </view>
+      </view>
+    </view>
+  </picker>
+
+<!--时间Picker-->
+<picker mode="multiSelector" bindchange="bindMultiPickerTime" value="{{multiIndex_time}}" range="{{multiArray_time}}">
+  <view class='date'>
+    <image src='/image/data.png' class='pic'></image>
+    <view>
+      <view class="text">
+        {{multiArray_time[0][multiIndex_time[0]]+' '+multiArray_time[1][multiIndex_time[1]]+' '+multiArray_time[2][multiIndex_time[2]]}}
+      </view>
+    </view>
+  </view>
+</picker>
+<!--快捷查找-->
+<view class='text_quick'>快捷查找</view>
+<view bindtap='setting' class='setting'>自定义</view>
+
+<!--自定义查询条件-->
+<view wx:for="{{custom}}">
+  <view class='btn' bindtap='chosen' data-id="{{index}}">
+    {{item[0]}}
+  </view>
+  
+</view>
+
+<!--查询-->
+<view bindtap='find' class='find'>查询</view>
+</view>

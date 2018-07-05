@@ -1,0 +1,139 @@
+<!--first-->
+<nav></nav>
+<view>
+  <!--信息样式转换按钮-->
+  <view class='{{openinfor1?"infor-button1":"infor-button-1"}}' hover="true" bindtap="Switch1">
+    <image  class="inforSearch1-pic" src= "/image/inforSearch1.png"></image>
+  </view>
+  <view class='{{openinfor2?"infor-button-2":"infor-button2"}}' hover="true" bindtap="Switch2">
+    <image  class="inforSearch1-pic" src= "/image/inforSearch2.png"></image>
+  </view>
+  
+</view>
+
+  <!--列表数据显示-->
+  <view wx:if="{{!openinfor1}}">
+    <block wx:for="{{inforlist}}"  wx:for-item="Classroom"  wx:if="{{Classroom.cname!=null}}">
+        <block wx:for="{{Classroom.Nweek}}" wx:for-item="Nweek"  wx:if="{{Nweek.nname!=null}}">
+          <view class="Nweek">{{Nweek.nname}}</view>
+          <view  class="cname">{{Classroom.cname}}</view>
+          <block wx:for="{{Nweek.week}}" wx:for-item="Week" wx:if="{{Week.wname!=null}}">
+            <view class="inforbar">
+              <text class="holdandtype">
+                规模：{{Classroom.number}}
+            
+                类型：{{Classroom.type}}
+
+              </text>
+              <view class="wname">{{Week.wname}}</view>
+              <view class="line"></view>
+              <view class="iconback">
+              <block wx:if="{{!lessonflag}}">
+                <view class="column1">
+                <view class="time">第一节</view>
+                <view class="time">第二节</view>
+                <view class="time">第三节</view>
+                <view class="time">第四节</view>
+                <view class="time">第五节</view>
+                </view>
+                <view class="column1">
+                  <block wx:for="{{Week.time}}" wx:for-item="itemName" >
+                    <block wx:if="{{ itemName}}">
+                      <image class="iconclass" src="/image/yes.png"></image>
+                    </block>
+                    <block wx:else>
+                      <image class="iconclass" src="/image/no.png"></image>
+                    </block>
+                  </block>
+                </view>
+              </block>
+              <block wx:else>
+                <view class="column1">
+                  <view class="time3">第{{lesson}}节</view>
+                  <block wx:for="{{Week.time}}" wx:for-item="itemName" wx:for-index="indexname">
+                    <block wx:if="{{indexname==lessonnumber-1}}">
+                      <block wx:if="{{ itemName}}">
+                        <image class="iconclass2" src="/image/yes.png"></image>
+                      </block>
+                      <block wx:else>
+                        <image class="iconclass2" src="/image/no.png"></image>
+                      </block>
+                    </block>
+                  </block>
+                </view>
+              </block>
+              </view>
+            </view>
+          </block>
+        </block>
+      </block>
+    </view>
+  
+  <view wx:if="{{openinfor1}}">
+    <block wx:for="{{inforlist}}"  wx:for-item="Classroom"  wx:if="{{Classroom.cname!=null}}">
+        <block wx:for="{{Classroom.Nweek}}" wx:for-item="Nweek"  wx:if="{{Nweek.nname!=null}}">
+          <block wx:for="{{Nweek.week}}" wx:for-item="Week" wx:if="{{Week.wname!=null}}">
+            <view class="inforblock">
+            <view class="column1">
+            <view class="row2">
+           <view class="Nweek1">{{Nweek.nname}}</view>
+           <view class="cname1"> {{Classroom.cname}}</view>
+            </view>
+              <view class="wname1">{{Week.wname}}</view>
+              <view class="line1"></view>
+              <view class="row1">
+                <block wx:if="{{!lessonflag}}">
+                  <view class="column1">
+                    <view class="time1">第一节</view>
+                    <view class="time1">第二节</view>
+                    <view class="time1">第三节</view>
+                    <view class="time1">第四节</view>
+                    <view class="time1">第五节</view>
+                  </view>
+                </block>
+                <block wx:else>
+                    <view class="time4">
+                    <view>第</view>
+                    <view>{{lesson}}</view>
+                    <view>节</view>
+                    </view>
+                </block>
+                  <view class="line2"></view>
+                <block wx:if="{{!lessonflag}}">
+                  <view class="column1">
+                    <view class="time2">8:00-9:35</view>
+                    <view class="time2">9:50-11:25</view>
+                    <view class="time2">13:20-14:55</view>
+                    <view class="time2">15:10-17:35</view>
+                    <view class="time2">18:30-20:55</view>
+                  </view>
+                  <view class="column1">
+                    <block wx:for="{{Week.time}}" wx:for-item="itemName" >
+                      <block wx:if="{{ itemName}}">
+                        <image class="iconclass1" src="/image/yes.png"></image>
+                      </block>
+                      <block wx:else>
+                        <image class="iconclass1" src="/image/no.png"></image>
+                      </block>
+                    </block>
+                  </view>
+                </block>
+                <block wx:else>
+                  <block wx:for="{{Week.time}}" wx:for-item="itemName" wx:for-index="indexname">
+                    <block wx:if="{{indexname==lessonnumber-1}}">
+                      <block wx:if="{{ itemName}}">
+                        <image class="iconclass3" src="/image/yes.png"></image>
+                      </block>
+                      <block wx:else>
+                        <image class="iconclass3" src="/image/no.png"></image>
+                      </block>
+                    </block>
+                  </block>
+                </block>
+              </view>
+            </view>
+          </view>
+        </block>
+      </block>
+    </block>
+  </view>

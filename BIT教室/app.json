@@ -1,8 +1,13 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/freeclass/search/search",
     "pages/course/search/search",
+    "pages/freeclass/liangxiang/search/search",
+    "pages/freeclass/liangxiang/class_search/class_search",
+    "pages/freeclass/liangxiang/class_setting/class_setting",
+    "pages/freeclass/zhongguancun/search/search",
+    "pages/freeclass/zhongguancun/class_search/class_search",
+    "pages/freeclass/zhongguancun/class_setting/class_setting",
     "pages/cooperation/list/list",
     "pages/schedule/list/list",
     "pages/infoflow/list/list",
@@ -12,7 +17,8 @@
     "pages/next/next",
     "pages/user/login/login",
     "pages/user/login_dtl/login_dtl",
-    "pages/user/userinfo/userinfo"
+    "pages/user/userinfo/userinfo",
+    "pages/course/results/results"
   ],
   "window": {
     "backgroundTextStyle": "light",

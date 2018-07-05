@@ -16,9 +16,18 @@ Page({
   },
   frec: function()
   {
-    wx.navigateTo({
-      url: '/pages/freeclass/search/search',
-    })
+    if (this.data.dist == '良乡校区')
+    {
+      wx.navigateTo({
+        url: '/pages/freeclass/liangxiang/search/search',
+      })
+    }
+    else
+    {
+      wx.navigateTo({
+        url: '/pages/freeclass/zhongguancun/search/search',
+      })
+    }
   },
   proj: function () {
     wx.navigateTo({

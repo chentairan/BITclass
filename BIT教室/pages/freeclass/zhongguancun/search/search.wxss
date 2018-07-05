@@ -1,0 +1,128 @@
+/* pages/class/class.wxss */
+page 
+{
+  background-color: #FDFDFD;
+}
+.contain
+{
+  display: flex;
+}
+.title
+{
+  color: #9A9396;
+  font-size: 60rpx;
+  position: absolute;
+  top: 230rpx;
+  left: 225rpx
+}
+.build
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 404rpx;
+  left: 40rpx;
+  width: 300rpx;
+  height: 100rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+  border:2rpx solid #F0F0F0;
+}
+.pic
+{
+  margin-left: 16rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.text
+{
+  margin-left: 16rpx;
+  color: #CCCCCC;
+  font-size: 28rpx;
+}
+.line
+{
+  position: absolute;
+  height: 2rpx;
+  width: 40rpx;
+  top: 455rpx;
+  left: 355rpx;
+  background-color: black;
+}
+.classroom
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 404rpx;
+  left: 412rpx;
+  width: 300rpx;
+  height: 100rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+  border:2rpx solid #F0F0F0;
+}
+.date
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 546rpx;
+  left: 40rpx;
+  width: 670rpx;
+  height: 100rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+  border:2rpx solid #F0F0F0;
+}
+.text_quick
+{
+  position: absolute;
+  top: 670rpx;
+  left: 40rpx;
+  font-size: 28rpx;
+  color: #95989A;
+}
+.setting
+{
+  position: absolute;
+  top: 670rpx;
+  right: 40rpx;
+  font-size: 28rpx;
+  color: #0099FF;
+}
+.find
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 36rpx;
+  border-radius: 32rpx;
+  position: absolute;
+  top: 950rpx;
+  left: 76rpx;
+  width: 600rpx;
+  height: 100rpx;
+  background-color: #325BF6;
+  box-shadow: 0 6rpx 12rpx rgba(50, 91, 246, 0.5)
+}
+.btn
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40rpx;
+  margin-top: 600rpx;
+  margin-bottom: 30rpx;
+  flex-wrap: wrap;
+  height: 72rpx;
+  padding: 0 20rpx 0 20rpx;
+  background-color: #fff;
+  color: #555555;
+  border-radius: 10rpx;
+  border:2rpx solid #F0F0F0;
+}

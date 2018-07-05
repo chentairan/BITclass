@@ -1,0 +1,61 @@
+<!--pages/class_setting.wxml-->
+<nav></nav>
+<view wx:for="{{custom}}">
+  <view class='index'>自定义{{index+1}}</view>
+  <view class='tag'>
+    <view class='name'>名称：</view>
+    <input maxlength="4" bindinput="bindKeyInput" value="{{item[0]}}" class='input' data-id="{{index}}"/>
+  </view>
+  <view class='locate'>地点</view>
+  <view class='picker'>
+  <!--教学楼Picker-->
+    <picker bindchange="bindPickerbuild" value="{{Index_build[index]}}" range="{{build_array}}" data-id="{{index}}">
+      <view class='build'>
+        <image src='/image/locate.png' class='pic'></image>
+        <view>
+          <view class='text'>
+            {{build_array[Index_build[index]]}}
+          </view>
+        </view>
+      </view>
+    </picker>
+
+    <view class='line'></view>
+
+  <!--教室Picker-->
+    <picker  mode="multiSelector" bindchange="bindMultiPickerClass"  data-id="{{index}}"    bindcolumnchange="bindMultiPickerColumnClass" value="{{multiIndex_classroom[index]}}" range="{{multiArray_classroom[index]}}" >
+      <view class='classroom'>
+        <image src='/image/locate.png' class='pic'></image>
+        <view>
+          <view class="text">
+            {{multiArray_classroom[index][1][multiIndex_classroom[index][1]]}}
+          </view>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class='locate'>日期</view>
+  <view class='switch'>
+    <view class='state'>当日</view>
+    <switch class='up' checked="{{show[index]}}" bindchange="switch1Change" data-id="{{index}}"/>
+  </view>
+  <!--时间Picker-->
+  <picker  mode="multiSelector" bindchange="bindMultiPickerTime" value="{{multiIndex_time[index]}}" range="{{multiArray_time}}" data-id="{{index}}">
+    <view class='date' hidden='{{show[index]}}'>
+      <image src='/image/data.png' class='pic'></image>
+      <view>
+        <view class="text">
+          {{multiArray_time[0][multiIndex_time[index][0]]+' '+multiArray_time[1][multiIndex_time[index][1]]+' '+multiArray_time[2][multiIndex_time[index][2]]}}
+        </view>
+      </view>
+    </view>
+  </picker>
+
+
+
+
+
+
+</view>
+<view class='block'></view>
+<view bindtap='done' class='done'>完成</view>

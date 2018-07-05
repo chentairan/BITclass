@@ -23,6 +23,14 @@ App({
           data: '订阅通知自动推送',
         })
         wx.setStorage({
+          key: "custom_liangxiang",
+          data: [['今日理教', 1, 0, 0, 'now'], ['今日综A', 2, 0, 0, 'now'], ['今日综B', 3, 0, 0, 'now']]
+        })
+        wx.setStorage({
+          key: "custom_zhongguancun",
+          data: [['今日信教', 1, 0, 0, 'now'], ['今日研教', 2, 0, 0, 'now']]
+        })
+        wx.setStorage({
           key: 'dist',
           data: '良乡校区',
         })

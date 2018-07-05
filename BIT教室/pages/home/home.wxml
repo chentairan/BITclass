@@ -14,9 +14,9 @@
       <view class='login' catchtap='login'>{{login}}</view>
     </view>
     <view class='line'></view>
-    <view class='user_down'>
+    <view class='user_down' bindtap='dist'>
       <view>{{dist}}</view>
-      <view class='fix' bindtap='dist'>
+      <view class='fix'>
         <view>选择校区</view>
         <view class='zone'></view>
       </view>

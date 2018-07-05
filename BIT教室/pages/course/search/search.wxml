@@ -1,2 +1,21 @@
 <!--pages/course/search/search.wxml-->
-<text>pages/course/search/search.wxml</text>
+<view class='contain'>
+  <view class='title'>课程查询</view>
+  <view class='small'>
+    <picker mode = selector range='{{xueyuan}}' bindchange='picker'>
+      <view class='tab'>
+        <image src='/image/inst.png' class='img'></image>
+        <view class='xueyuan'>{{inst}}</view>
+      </view>
+    </picker>
+    <view class='tab'>
+      <image src='/image/teacher.png' class='img'></image>
+      <input class='input1' placeholder='教师' bindinput='teacher'></input>
+    </view>
+  </view>
+  <view class='kecheng'>
+    <image src='/image/course.png' class='img'></image>
+    <input class='input2' placeholder='课程名称' bindinput='course'></input>
+  </view>
+  <view class='search' bindtap='search'>查询</view>
+</view>
