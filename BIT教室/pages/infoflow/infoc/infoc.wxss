@@ -158,4 +158,9 @@
 .article
 {
   color: #191919;
+} 
+.fix
+{
+  height: 34rpx;
+  width: 750rpx;
 }

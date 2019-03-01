@@ -1,0 +1,12 @@
+<nav></nav>
+<view class="title">添加组织便签(非班级)</view>
+<view class="line"></view>
+<view class="input1">输入组织用户名</view>
+<view class="input2">{{input2}}</view>
+<view class="line_i t1"></view>
+<view class="line_i t2"></view>
+<input class="class" type="text" placeholder-class="text" bindblur="number" />
+<input class="password" type="text" password='{{state}}' placeholder-class="text" bindblur="password" />
+<view class="submit" bindtap="submit">
+  {{find}}
+</view>

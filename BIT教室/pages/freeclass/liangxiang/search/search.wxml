@@ -55,3 +55,4 @@
 <!--查询-->
 <view bindtap='find' class='find'>查询</view>
 </view>
+<ad class="{{isIpx?'ad_ipx':'ad'}}" unit-id="adunit-aebb151a3178e40a"></ad>

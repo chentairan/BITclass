@@ -1,4 +1,5 @@
 <!--pages/course/search/search.wxml-->
+<nav color='#FDFDFD'></nav>
 <view class='contain'>
   <view class='title'>课程查询</view>
   <view class='small'>
@@ -18,4 +19,5 @@
     <input class='input2' placeholder='课程名称' bindinput='course'></input>
   </view>
   <view class='search' bindtap='search'>查询</view>
+  <ad class="{{isIpx?'ad_ipx':'ad'}}" unit-id="adunit-9a9736a3e14cc2dc"></ad>
 </view>

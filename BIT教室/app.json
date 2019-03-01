@@ -8,7 +8,10 @@
     "pages/freeclass/zhongguancun/search/search",
     "pages/freeclass/zhongguancun/class_search/class_search",
     "pages/freeclass/zhongguancun/class_setting/class_setting",
-    "pages/cooperation/list/list",
+    "pages/cooperation/note/note",
+    "pages/cooperation/note_dtl/note_dtl",
+    "pages/cooperation/note_register/note_register",
+    "pages/cooperation/note_register_dtl/note_register_dtl",
     "pages/schedule/list/list",
     "pages/infoflow/list/list",
     "pages/infoflow/infoc/infoc",
@@ -18,7 +21,10 @@
     "pages/user/login/login",
     "pages/user/login_dtl/login_dtl",
     "pages/user/userinfo/userinfo",
-    "pages/course/results/results"
+    "pages/course/results/results",
+    "pages/about/about",
+    "pages/advertise/advertise",
+    "pages/push/push"
   ],
   "window": {
     "backgroundTextStyle": "light",

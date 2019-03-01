@@ -128,8 +128,8 @@ page
   bottom: 40rpx;
   width: 600rpx;
   height: 100rpx;
-  background-color: rgba(50, 91, 246, 0.95);
-  box-shadow: 0 6rpx 12rpx rgba(50, 91, 246, 0.5)
+  background-color: #D43E35;
+  box-shadow: 0 6rpx 12rpx rgba(212, 62, 53, 0.5)
 }
 .block
 {

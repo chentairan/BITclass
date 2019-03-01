@@ -1,3 +1,6 @@
 {
-  "backgroundColor": "#F5F5F5"
+  "background-color": "#FDFDFD",
+  "usingComponents": {
+    "nav": "/component/navigation_in/navigation_in"
+  }
 }

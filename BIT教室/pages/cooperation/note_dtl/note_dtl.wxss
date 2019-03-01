@@ -1,0 +1,79 @@
+/* pages/note_dtl/note_dtl.wxss */
+.up
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 72rpx;
+}
+.title
+{
+  font-size: 52rpx;
+  position: absolute;
+  left: 60rpx;
+  color: #333333;
+  height: 80rpx;
+}
+.edit
+{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  left: 634rpx;
+  z-index: 1;
+}
+.line
+{
+  width: 620rpx;
+  height: 2rpx;
+  background-color: #E8ECF1;
+  position: absolute;
+  top: 340rpx;
+  left: 64rpx;
+}
+.done
+{
+  position: absolute;
+  left: 608rpx;
+  z-index: 1;
+  color: #007AFF;
+}
+.text
+{
+  position: absolute;
+  top: 390rpx;
+  left: 60rpx;
+  width: 600rpx;
+  font-size: 36rpx;
+  color: #333333;
+}
+.mask
+{
+  position: absolute;
+  top: 390rpx;
+  left: 60rpx;
+  width: 600rpx;
+  height: 800rpx;
+  z-index: 1;
+}
+.extra
+{
+  position: fixed;
+  bottom: 0;
+  height: 120rpx;
+  width: 750rpx;
+  background-color: #EEEEEE;
+  color: #666666;
+  font-size: 34rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.from
+{
+  position: absolute;
+  top: 300rpx;
+  right: 64rpx;
+  font-size: 24rpx;
+  color: gray;
+}

@@ -12,7 +12,7 @@ Page({
     var content = new Array();
     var that = this;
     var record = new AV.Query('record');
-    if (inst !='开课学院'&&inst !='其他')
+    if (inst !='开课学院'&&inst !='其他'&& inst !='全部')
     {
       record.equalTo('kkyxmc', inst);
     }
@@ -57,11 +57,14 @@ Page({
       wx.hideLoading();
       for (let i = 0; i < results.length; i++) 
       {
-        var course = results[i];
+        let course = results[i];
+        let kcmc = course.get('kcmc') ? course.get('kcmc'):'暂无';
+        let jsxm = course.get('jsxm') ? course.get('jsxm'):'暂无';
+        let jsmc = course.get('jsmc') ? course.get('jsmc'):'暂无';
         content[i] = new Object();
-        content[i].kcmc = course.get('kcmc');
-        content[i].jsxm = '教师：'+course.get('jsxm');
-        content[i].jsmc = '地点：'+course.get('jsmc');
+        content[i].kcmc = kcmc;
+        content[i].jsxm = '教师：' + jsxm;
+        content[i].jsmc = '地点：' + jsmc;
         content[i].sksj = '时间：'+course.get('skzc') + '周 ' + course.get('skxq') + ' ' + course.get('skjc');
         content[i].kkyxmc = '开课：'+course.get('kkyxmc');
       }

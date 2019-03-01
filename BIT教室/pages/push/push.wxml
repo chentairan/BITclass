@@ -1,0 +1,9 @@
+<!--pages/push/push.wxml-->
+<view class='title'>新的通知</view>
+<image src='/image/push.png' class='also'></image>
+<form  report-submit='true' bindsubmit='submit'>
+  <button class='submit' form-type='submit'>查看并订阅下一条</button>
+</form>
+<form  report-submit='true' bindsubmit='back'>
+  <button class='back' form-type='submit'>返回主页</button>
+</form>

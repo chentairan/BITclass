@@ -1,0 +1,57 @@
+/* pages/email/email.wxss */
+page 
+{
+  display: block;
+  background-color: white;
+}
+.title
+{
+  position:absolute;
+  top: 230rpx;
+  left: 50rpx; 
+  font-size: 60rpx;
+  font-weight: bold;
+}
+.email
+{
+  position:absolute;
+  top: 365rpx;
+  left: 50rpx; 
+  font-size: 45rpx;
+  font-weight: lighter
+}
+.holder
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items:Center;
+  color:  darkgrey;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.line
+{
+  position:absolute;
+  top: 430rpx;
+  left: 50rpx;
+  height: 2rpx;
+  width: 650rpx;
+  background-color: #c8c8c8;
+}
+
+.next
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 586rpx;
+  height: 90rpx;
+  border-radius: 32rpx;
+  background-color: #325BF6;
+  box-shadow: 0 6rpx 12rpx rgba(50,91,246,0.5);
+  font-size: 36rpx;
+  color: white;
+  position: absolute;
+  left: 90rpx;
+  top: 595rpx;
+}

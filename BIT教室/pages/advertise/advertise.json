@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "nav": "/component/navigation_white/navigation_white"
+  }
+}

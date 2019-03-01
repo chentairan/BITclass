@@ -1,0 +1,45 @@
+<!--pages/note/note.wxml-->
+<nav color='#D33A31'>
+  <view class='type' bindtap='sort'>{{type}}</view>
+</nav>
+<image src='/image/select.png' class='select'></image>
+<view class='mask' hidden='{{sort}}' bindtap='sort'></view>
+<view class='sort' hidden='{{sort}}'>
+  <image src='/image/selected.png' class='selected'></image>
+  <view class='block' bindtap='all'>
+    <image src='/image/folder.png' class='icon'></image>
+    <view class='text'>全部便签</view>
+    <image src='/image/folder_selected.png' hidden='{{selected[0]}}' class='true'></image>
+  </view>
+  <view class='block' wx:for="{{org}}" bindtap='{{edit?"div":"tap"}}' data-id="{{index}}">
+    <image src='{{edit?"/image/text.png":circle[tap[index]]}}' class='icon'></image>
+    <view class='text'>{{item}}</view>
+    <image src='/image/folder_selected.png' class='true' hidden='{{selected[index+1]}}'></image>
+  </view>
+  <view class='edit'>
+    <view class='edited e1' bindtap='edit'>{{edit_text}}</view>
+    <view class='edited e2' bindtap='{{edit?"register":"remove"}}'>{{done_text}}</view>
+  </view>
+</view>
+
+<view class='scroll'>
+  <view class='fix'></view>
+  <view wx:for="{{note}}" class='info' >
+    <image src='{{clip[index]?"/image/clip_up.png":"/image/clip.png"}}' class='clip'></image>
+    <view class='tip' style='margin-left:{{move[index]}}rpx'bind:touchmove="edit_start" bind:touchend="edit_end" data-id="{{index}}"   bindtap='dtl'>
+      <view class='up'>
+        <view class='up_left'></view>
+        <view class='up_right'>{{note[index].time}}</view>
+      </view>
+      <view class='down'>
+        <view class='down_left'></view>
+        <view class='down_right'>{{note[index].title}}</view>
+      </view>
+    </view>
+    <image src='/image/del.png' class='del' bindtap='del' data-id="{{index}}"></image>
+  </view>
+</view>
+
+<view bindtap='add' class='add'>
+  <image class='pic' src='/image/add.png'></image>
+</view>

@@ -115,6 +115,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let app = getApp()
+    let isPhone = app.globalData.isIpx;
+    this.setData({
+      isIpx: isPhone
+    })
     wx.setNavigationBarTitle({
       title: '教务处通知'
     })

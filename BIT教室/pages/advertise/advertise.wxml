@@ -1,0 +1,13 @@
+<!--pages/advertise/advertise.wxml-->
+<nav color='#D33A31'>帮助推广</nav>
+<view class='contain'>
+  <view class='line'></view>
+  <view class='text1'>用户量</view>
+  <text selectable='true' class='text2'>BIT教室小程序拥有3000+用户，覆盖近半数16级、17级学生</text>
+  <view class='line'></view>
+  <view class='text1'>帮助推广</view>
+  <view class='text2'>为了将小程序推广给更多学生，给学生带来便捷的服务，希望学生组织可以帮助宣传。</view>
+  <view class='line'></view>
+  <view class='text1'>感谢那些曾经帮助推广的学生组织！</view>
+  <text class='text2'>{{thank}}</text>
+</view>

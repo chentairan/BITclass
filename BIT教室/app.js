@@ -8,10 +8,67 @@ AV.init({
 });
 
 App({
+  judge: function (now, time) {
+    if (now.getFullYear() == time[1] && now.getMonth() == time[2] - 1 && now.getDate() == time[3])
+      return 0;
+    else if (now.getMonth() < time[2] - 1)
+      return 1;
+    else if (now.getMonth() > time[2] - 1)
+      return -1;
+    else if (now.getDate() < time[3])
+      return 1;
+    else if (now.getDate() > time[3])
+      return -1;
+  },
   onLaunch: function () {
+    let _this = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        //model中包含着设备信息
+        console.log(res.model)
+        var model = res.model
+        if (model.search('iPhone X') != -1) {
+          _this.globalData.isIpx = true;
+        } else {
+          _this.globalData.isIpx = false;
+        }
+      }
+    })
+
+
+
+
     try {
+      var that =this;
+      var schedule = new Array();
+      var now = new Array();
+      let time = new Date();
       var value = wx.getStorageSync('init')
       if (value) {
+        wx.getStorage({
+          key: 'schedule',
+          success: function (res) {
+            schedule = res.data
+            for (var i = 0; i < schedule.length; i++) {
+              switch (that.judge(time, schedule[i])) {
+                case -1:
+                console.log('test')
+                  break;
+                case 0:
+                console.log('done')
+                  now.push(schedule[i]);
+                  break;
+                case 1:
+                  now.push(schedule[i]);
+                  break;
+              }
+            }
+            wx.setStorage({
+              key: "schedule",
+              data: now
+            })
+          }
+        })
       }
       else {
         wx.setStorage({

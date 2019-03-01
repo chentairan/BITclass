@@ -16,6 +16,9 @@
       </view>
     </block>
   </view>
+  
+  <ad unit-id="adunit-d0e7b5965402a89f"></ad>
+  <view wx:if='{{isIpx}}' class='fix'></view>
 </view>
 
 <view hidden='{{spilt}}' class='bg'></view>
@@ -34,4 +37,5 @@
       </view>
     </block>
   </view>
+
 </view>

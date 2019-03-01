@@ -1,0 +1,119 @@
+/* pages/login/login.wxss */
+/* Homework.wxss */
+.title
+{
+  position: absolute;
+  top: 210rpx;
+  left: 42rpx;
+  font-size: 60rpx;
+  font-weight: bold;
+}
+.line
+{
+  position: absolute;
+  top: 310rpx;
+  left: 42rpx;
+  width: 708rpx;
+  height: 4rpx;
+  background-image: linear-gradient(90deg,
+                    #7794ff, 
+                    #44107A,
+                    #FF1361,
+                    #FFF800);
+}
+.input1
+{
+  font-size: 48rpx;
+  position: absolute;
+  left: 52rpx;
+  top: 448rpx;
+  color: black;
+  font-weight: bold;
+}
+.input2
+{
+  font-size: 48rpx;
+  position: absolute;
+  left: 52rpx;
+  top: 770rpx;
+  color: black;
+  font-weight: bold;
+}
+.class
+{
+  position: absolute;
+  left: 52rpx;
+  top: 581rpx;
+  height: 66rpx;
+  font-size: 48rpx;
+}
+.password
+{
+  position: absolute;
+  left: 52rpx;
+  top: 905rpx;
+  height: 66rpx;
+  font-size: 48rpx;
+}
+.line_i
+{
+  width: 646rpx;
+  height: 4rpx;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.line_i.t1
+{
+  position: absolute;
+  top: 644rpx;
+  left: 52rpx;
+}
+.line_i.t2
+{
+  position: absolute;
+  top: 967rpx;
+  left: 52rpx;
+}
+.submit
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 586rpx;
+  height: 90rpx;
+  border-radius: 32rpx;
+  background-color: #325BF6;
+  box-shadow: 0 6rpx 12rpx rgba(50,91,246,0.5);
+  font-size: 36rpx;
+  color: white;
+  position: absolute;
+  left: 90rpx;
+  top: 1114rpx;
+}
+
+.forget
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 30rpx;
+  top: 1220rpx;
+  left:315rpx;
+}
+
+.finish
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 586rpx;
+  height: 90rpx;
+  border-radius: 32rpx;
+  background-color: #325BF6;
+  box-shadow: 0 6rpx 12rpx rgba(50,91,246,0.5);
+  font-size: 36rpx;
+  color: white;
+  position: absolute;
+  left: 90rpx;
+  top: 1134rpx;
+}

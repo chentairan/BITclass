@@ -96,19 +96,18 @@ page
 }
 .find
 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 36rpx;
-  border-radius: 32rpx;
   position: absolute;
   top: 950rpx;
   left: 76rpx;
-  width: 600rpx;
-  height: 100rpx;
-  background-color: #325BF6;
-  box-shadow: 0 6rpx 12rpx rgba(50, 91, 246, 0.5)
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 586rpx;
+  height: 90rpx;
+  border-radius: 90rpx;
+  border: 1rpx solid #D43E35;
+  font-size: 36rpx;
+  color: #D43E35;
 }
 .btn
 {
@@ -125,4 +124,14 @@ page
   color: #555555;
   border-radius: 10rpx;
   border:2rpx solid #F0F0F0;
+}
+.ad
+{
+  position: fixed;
+  bottom: 0rpx;
+}
+.ad_ipx
+{
+  position: fixed;
+  bottom: 34rpx;
 }

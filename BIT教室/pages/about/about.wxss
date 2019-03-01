@@ -1,0 +1,122 @@
+/* pages/about/about.wxss */
+.contain
+{
+  width: 650rpx;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}
+.line
+{
+  width: 68rpx;
+  height: 14rpx;
+  background-color: #EEEEEE;
+  border-radius: 7rpx;
+  margin-top: 66rpx;
+}
+.text1
+{
+  font-size: 32rpx;
+  color: #666666;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+.text2
+{
+  font-size: 32rpx;
+  color: #999999;
+  margin-top: 30rpx;
+}
+.text.t1
+{
+  color: #666666;
+  position: absolute;
+  top: 260rpx;
+  left: 50rpx;
+  height: 44rpx;
+}
+.text.t2
+{
+  color: #999999;
+  position: absolute;
+  top: 320rpx;
+  left: 50rpx;
+}
+.text.t3
+{
+  color: #666666;
+  position: absolute;
+  top: 470rpx;
+  left: 50rpx;
+}
+.text.t4
+{
+  color: #666666;
+  position: absolute;
+  top: 820rpx;
+  left: 50rpx;
+}
+.text.t5
+{
+  color: #999999;
+  position: absolute;
+  top: 890rpx;
+  left: 50rpx;
+}
+.text.t6
+{
+  color: #999999;
+  position: absolute;
+  top: 530rpx;
+  left: 50rpx;
+  width: 600rpx;
+  line-height: 50rpx;
+}
+.text.t7
+{
+  color: #666666;
+  position: absolute;
+  top: 820rpx;
+  left: 50rpx;
+}
+.square
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #44B549;
+  position: absolute;
+  height: 54rpx;
+  width: 144rpx;
+  top: 310rpx;
+  left: 254rpx;
+  font-size: 32rpx; 
+  border-radius: 12rpx;
+  border:2rpx solid #44B549;
+}
+.money
+{
+  position: absolute;
+  bottom: 0;
+  height: 120rpx;
+  width: 750rpx;
+  background-color: #FFC300;
+  color: white;
+  font-size: 34rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coop
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140rpx;
+  height: 44rpx;
+  border-radius: 50rpx;
+  border: 2rpx solid #D43D34;
+  font-size: 24rpx;
+  color: #D43D34;
+  margin-left: 40rpx;
+}

@@ -1,11 +1,39 @@
-<!--pages/love_hide/love_hide.wxml-->
-<view class="train">
-  <view class="windows"></view>
-  <view class="lights"></view>
+<!--pages/test/test.wxml-->
+<view>
+  <view class="center">
+    <view class="card">
+      <view class="flippy">
+        <view class="front">
+          <view class="car">
+            <image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1435559/car.svg" alt="car svg" class='img'></image>
+          </view>
+          <view class="street">
+            <view class="line line-1"></view>
+            <view class="line line-2"></view>
+            <view class="line line-3"></view>
+            <view class="line line-4"></view>
+            <view class="line line-5"></view>
+            <view class="line line-6"></view>
+          </view>
+        </view>
+        <view class="back">
+          <view class="jet">
+            <image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1435559/jet.svg" class='img'></image>
+          </view>
+          <view class="sky">
+            <view class="line line-1"></view>
+            <view class="line line-2"></view>
+<!--             <view class="line line-3"></view> -->
+            <view class="line line-4"></view>
+<!--             <view class="line line-5"></view> -->
+            <view class="line line-6"></view>
+            <view class="missile">
+              <image src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1435559/missile.svg" class='img'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
-<view class="rails">
-  <view class="ties"></view>
-  <view class="ties"></view>
-  <view class="ties"></view>
-</view>
-<view class='text' bindtap='Toabout'>敬请期待</view>
+ <view class='text'>{{laji}}</view>

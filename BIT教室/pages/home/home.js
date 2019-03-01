@@ -12,7 +12,8 @@ Page({
     dist:'',
     content: [],
     reg: '',
-    res: []
+    res: [],
+    text: '- THE END -'
   },
   frec: function()
   {
@@ -35,9 +36,25 @@ Page({
     })
   },
   coop: function () {
-    wx.navigateTo({
-      url: '/pages/cooperation/list/list',
+    wx.getStorage({
+      key: 'user',
+      success: function(res) {
+        if(res.data.length ==6)
+        {
+          wx.showModal({
+            title: '请登录',
+            content: '协作功能需登陆使用',
+          })
+        }
+        else
+        {
+          wx.navigateTo({
+            url: '/pages/cooperation/note/note',
+          })
+        }
+      },
     })
+    
   },
   musi: function () {
     wx.navigateTo({
@@ -85,12 +102,24 @@ Page({
       url: '/pages/schedule/list/list',
     })
   },
+  about: function(){
+    wx.navigateTo({
+      url: '/pages/about/about',
+    })
+  },
   dist: function() {
     let that = this;
     let itemList = ['良乡校区', '中关村校区'];
     wx.showActionSheet({
       itemList: itemList,
       success: function (res) {
+        if(res.tapIndex==1)
+        {
+          wx.showModal({
+            title: '开发中',
+            content: '中关村校区教室过乱，在开发中',
+          })
+        }
         wx.setStorage({
           key: "dist",
           data: itemList[res.tapIndex]
@@ -237,6 +266,23 @@ Page({
       },
     })
   },
+  end: function() {
+    let innerAudioContext = this.data.innerAudioContext
+    if (this.data.text == '- THE END -')
+    {
+      innerAudioContext.play()
+      this.setData({
+        text: '- 难过时，把舞跳 -'
+      })
+    }
+    else
+    {
+      innerAudioContext.pause()
+      this.setData({
+        text: '- THE END -'
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -251,14 +297,20 @@ Page({
         })
       },
     })
-    this.schedule()
+    const innerAudioContext = wx.createInnerAudioContext()
+    innerAudioContext.src = 'http://lc-vi5l0pvp.cn-n1.lcfile.com/beabdfae5f74799f08e9.mp3'
+    innerAudioContext.obeyMuteSwitch = 'false'
+    innerAudioContext.volume = 1;
+    this.setData({
+      innerAudioContext: innerAudioContext
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    
   },
 
   /**
@@ -290,6 +342,7 @@ Page({
     } catch (e) {
       // Do something when catch error
     }
+    this.schedule()
   },
   /**
    * 生命周期函数--监听页面隐藏

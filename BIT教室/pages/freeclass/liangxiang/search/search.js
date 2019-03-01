@@ -189,16 +189,20 @@ Page({
   onLoad: function (options) {
     //获取自定义查询条件
     var that = this;
-    
+    let app = getApp()
+    let isPhone = app.globalData.isIpx;
+    this.setData({
+      isIpx:isPhone
+    })
     //获取当前周数
     var year = new Date().getFullYear();
     var month = new Date().getMonth() + 1;
     var day = new Date().getDate();
-    if ((month > 1 && year == 2018) || (year == 2018 && month < 7 && day < 1)) 
+    if ((month > 7 && year == 2018) || (year == 2019 && month < 1 && day < 21)) 
     {
       try {
         var dayNow = new Date().getTime();
-        var dayZero = new Date().setFullYear(2018, 1, 26);
+        var dayZero = new Date().setFullYear(2018, 7, 27);
         var weekDay = new Date().getDay();
         var week = Math.ceil((dayNow - dayZero) / 1000 / 60 / 60 / 24 / 7);
       }
@@ -227,6 +231,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+
     var that = this;
     wx.getStorage({
       key: 'custom_liangxiang',

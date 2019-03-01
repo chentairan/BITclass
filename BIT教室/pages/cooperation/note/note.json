@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#FDFDFD",
+  "usingComponents": {
+    "nav": "/component/navigation_white/navigation_white",
+    "slide-view": "miniprogram-slide-view"
+  }
+}

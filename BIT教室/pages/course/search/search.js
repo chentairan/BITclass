@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    xueyuan: ['国际教育学院',
+    xueyuan: ['全部',
+              '国际教育学院',
               '化学与化工学院',
               '信息与电子学院',
               '外国语学院',
@@ -59,6 +60,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let app = getApp()
+    let isPhone = app.globalData.isIpx;
+    this.setData({
+      isIpx: isPhone
+    })
   
   },
 

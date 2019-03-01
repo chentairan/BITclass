@@ -1,0 +1,16 @@
+<!--pages/note_dtl/note_dtl.wxml-->
+<nav></nav>
+<view class='up'>
+  <input class='title' value='{{tit}}' placeholder='无标题' bindinput='title' disabled='{{!edit}}' maxlength='10'></input>
+  <image src='/image/pen.png' class='edit' hidden='{{edit}}' bindtap='edit'></image>
+  <view class='done' hidden='{{!edit}}' bindtap='done'>完成</view>
+</view>
+<view class='from'>From:{{content.oname}}</view>
+<view class='line'></view>
+<textarea class='text' bindinput='text' value='{{tex}}' disabled='{{!edit}}' maxlength='-1' auto-height='true' focus='{{state}}' bindblur='state'></textarea>
+<view class='mask' bindtap='state' hidden='{{state}}'></view>
+<!--
+<view class='extra' bindtap='add'>
+  <view class='schedule'>添加至便签成员日程</view>
+</view>
+-->

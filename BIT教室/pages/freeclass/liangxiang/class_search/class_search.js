@@ -109,7 +109,7 @@ Page({
                 content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1].time = [false, false, false, false, false];
               }
               content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1].wname = temp2;
-              content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1].time[object.get('time') - 1] = object.get('state');
+              content[j].Nweek[object.get('Nweek') - 1].week[object.get('week') - 1].time[object.get('time') - 1] = !object.get('state');
               break;
             }
           }

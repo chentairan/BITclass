@@ -1,0 +1,22 @@
+<!--pages/about/about.wxml-->
+<nav color='#D33A31'>关于我</nav>
+<view class='contain'>
+  <view class='line'></view>
+  <view class='text1'>开源版本 #</view>
+  <text selectable='true' class='text2'>https://github.com/chentairan/BITclass</text>
+  <view class='line'></view>
+  <view class='text1'>更新日志</view>
+  <view class='text2'>V4.0：重新设计的主界面，教务通知分为摘要和列表视图，新增中关村校区，个人维护的最后一版。</view>
+  <view class='line'></view>
+  <view class='text1'>联系我</view>
+  <view class='text2'>微信：ctrTom</view>
+  <view class='line'></view>
+  <view class='text1'>
+    <view>阿波罗计划</view>
+    <view class='coop' bindtap='ad'>帮助推广</view>
+  </view>
+  <view class='text2'>We choose to go to the moon in this decade and do the other things,
+  not because they are easy, but because they are hard.
+  -- John F. Kennedy, 1962
+  </view>
+</view>

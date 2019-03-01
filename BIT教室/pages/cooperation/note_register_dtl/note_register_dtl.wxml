@@ -1,0 +1,6 @@
+<!--pages/email/email.wxml-->
+<nav></nav>
+<view class='title'>设置组织便签名称</view>
+<input class='email' placeholder="" placeholder-class="holder" bindinput='email'></input>
+<view class='line'></view>
+<view class="next" bindtap="done">完成</view>

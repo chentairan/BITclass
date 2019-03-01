@@ -1,6 +1,7 @@
 <!--pages/home/home.wxml-->
 <view class='contain'>
   <view class='bg_top'>
+    <view class='about' bindtap='about'>关于我</view>
     <view class='title'>BIT教室</view>
     <view class='author'>不要因为走得太远，就忘了当初为什么出发！</view>
   </view>
@@ -81,7 +82,10 @@
     </view>
   </view>
 
-  <view class='gtd'>
+  <view class='gtd' bindtap='tim'>
     <view class='empt'>{{last}}</view>
+  </view>
+  <view class='end' bindtap='end'>
+    <view class='end_music'>{{text}}</view>
   </view>
 </view>
